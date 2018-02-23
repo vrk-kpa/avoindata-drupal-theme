@@ -16,7 +16,7 @@ This theme should be used together with [ytp-assets-common](https://github.com/v
 * Theme requires ytp-assets-common/src/less/variables.less to set variables used in both Drupal and CKAN
 * Theme Less files are compiled to CSS using ytp-assets-common's Gulpfile
 
-# Developing the theme
+## Developing the theme
 
 1. Edit Less files in this repo or ytp-assets-common/src/less/variables.less. Changes in other files shouldn't change this theme.
 2. In your local environment, cd to ytp-assets-common and run `gulp` or `gulp drupal`. This compiles Less to CSS.
