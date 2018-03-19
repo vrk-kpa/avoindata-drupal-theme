@@ -13,3 +13,7 @@
 
 # Disable the CDN provider so compiled LESS source files can be used.
 cdn_provider: ''
+
+logo:
+  path: 'themes/avoindata/logo.png'
+  use_default: false
