@@ -1,0 +1,25 @@
+langcode: fi
+status: true
+dependencies:
+  module:
+    - avoindata_frontpage
+    - system
+  theme:
+    - avoindata
+id: avoindata_searchckan
+theme: avoindata
+region: content
+weight: 5
+provider: null
+plugin: search_ckan
+settings:
+  id: search_ckan
+  label: 'Search CKAN'
+  provider: avoindata_frontpage
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

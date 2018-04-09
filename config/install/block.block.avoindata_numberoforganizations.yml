@@ -1,0 +1,25 @@
+langcode: fi
+status: true
+dependencies:
+  module:
+    - avoindata_frontpage
+    - system
+  theme:
+    - avoindata
+id: avindata_numberoforganizations
+theme: avoindata
+region: content
+weight: 3
+provider: null
+plugin: key_figure
+settings:
+  id: key_figure
+  label: 'Number of organizations'
+  provider: avoindata_frontpage
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

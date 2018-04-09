@@ -1,0 +1,25 @@
+langcode: fi
+status: true
+dependencies:
+  module:
+    - avoindata_frontpage
+    - system
+  theme:
+    - avoindata
+id: avoindata_frontpageintroduction
+theme: avoindata
+region: content
+weight: 1
+provider: null
+plugin: front_page_introduction
+settings:
+  id: front_page_introduction
+  label: 'Front Page Introduction'
+  provider: avoindata_frontpage
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
