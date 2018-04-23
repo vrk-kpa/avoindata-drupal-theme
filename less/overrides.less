@@ -1,19 +1,22 @@
 // @todo these should be their own CSS files and only included when
 // specific Drupal libraries are used.
-@import "component/alert";
-@import "component/ajax";
-@import "component/field";
-@import "component/file";
-@import "component/filter";
-@import "component/form";
-@import "component/icon";
-@import "component/navbar";
-@import "component/node";
-@import "component/panel";
-@import "component/progress-bar";
-@import "component/table-drag";
-@import "component/tabs";
-@import "component/toolbar";
+@import "component/fontawesome/fontawesome";
+@import "component/fontawesome/fa-solid";
+//@import "component/alert";
+//@import "component/ajax";
+//@import "component/field";
+//@import "component/file";
+//@import "component/filter";
+//@import "component/form";
+//@import "component/icon";
+//@import "component/navbar";
+//@import "component/node";
+//@import "component/panel";
+//@import "component/progress-bar";
+//@import "component/table-drag";
+//@import "component/tabs";
+//@import "component/toolbar";
+
 
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
@@ -21,6 +24,11 @@
 // Avoindata common variables
 @import "../../ytp-assets-common/src/less/variables";
 
+body {
+  margin: 0;
+  min-height: 100%;
+  font-size: 14px;
+}
 ol, ul {
   padding-left: 1.5em;
   .popover &:last-child {
@@ -69,4 +77,107 @@ p:last-child,
   &:first-child {
     margin-top: 0;
   }
+}
+
+.logo img{
+  width: 150px;
+}
+
+//Header
+//color: #222222;
+//padding: 20px;
+.navlink {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+#navbar {
+  background-color: #011734;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.navbar {
+  margin-top: 0px;
+  color: #123f52;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.region-header {
+  padding-bottom: 0px;
+  background-color: #fff;
+}
+
+.language-link {
+  margin-top: 9px;
+  margin-bottom: 6px;
+  padding: 8px 14px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+}
+.navbar li {
+ .navlink;
+}
+.navbar a {
+  padding: 14px;
+  color: hsla(0, 0%, 100%, .64);
+  .navlink;
+}
+
+//Halutaan, että linkki ei vaihda väriä, kun sitä hoveroidaan
+//Pitää olla spesifimpi kuin bootstrapin sääntö
+#block-avoindata-mainnavigationfi .menu--main-fi a:hover {
+  color: hsla(0, 0%, 100%, .65);
+  background-color: #011734;
+  text-decoration: underline;
+}
+
+.navbar a.w--current {
+  padding-bottom: 8px;
+  border-bottom: 0px none #182b75;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  position:relative;
+}
+
+//Päävalikko pidetään ruudun keskellä
+.navbar .navbar-header {
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+}
+
+//Päävalikon linkit oikeaan reunaan
+.navbar-header .region-navigation {
+  float: right;
+}
+
+//Logo ja kielivalinnat ruudun keskellä
+.region-header{
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//Piilotetaan lisälinkit
+.menu--main-more-fi{
+  display: none;
 }
