@@ -110,9 +110,18 @@ p:last-child,
   overflow-x: auto;
 }
 
+//Logo ja kielivalinta
 .region-header {
+  display: flex;
   padding-bottom: 0px;
   background-color: #fff;
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#block-avoindata-kielenvaihtaja {
+  flex: auto;
 }
 
 .language-link {
@@ -155,6 +164,7 @@ p:last-child,
   display: flex;
   float: right;
   position:relative;
+  list-style-type: none;
 }
 
 //Päävalikko pidetään ruudun keskellä
@@ -168,13 +178,6 @@ p:last-child,
 //Päävalikon linkit oikeaan reunaan
 .navbar-header .region-navigation {
   float: right;
-}
-
-//Logo ja kielivalinnat ruudun keskellä
-.region-header{
-  max-width: 940px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 //Piilotetaan lisälinkit
